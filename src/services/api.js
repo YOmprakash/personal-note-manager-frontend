@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = 'http://localhost:5000/api';
+const API = 'https://personal-note-manager-backend.onrender.com/api';
 
 export const fetchNotes = () => axios.get(`${API}/notes`);
 export const createNote = (note) => axios.post(`${API}/notes`, note);
