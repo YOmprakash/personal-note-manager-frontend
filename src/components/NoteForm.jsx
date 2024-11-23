@@ -32,8 +32,8 @@ function NoteForm({ selectedNote, setSelectedNote, notes, setNotes }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white p-4 shadow rounded-lg">
-      <h2 className="text-xl font-bold mb-2">{selectedNote ? 'Edit Note' : 'Add Note'}</h2>
+    <form onSubmit={handleSubmit} className="p-4 bg-white rounded-lg shadow max-h-[300px]">
+      <h2 className="mb-2 text-xl font-bold">{selectedNote ? 'Edit Note' : 'Add Note'}</h2>
       <div className="mb-2">
         <input
           type="text"
@@ -66,7 +66,7 @@ function NoteForm({ selectedNote, setSelectedNote, notes, setNotes }) {
       </div>
       <button
         type="submit"
-        className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600"
+        className="w-full py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600"
       >
         {selectedNote ? 'Update Note' : 'Add Note'}
       </button>
